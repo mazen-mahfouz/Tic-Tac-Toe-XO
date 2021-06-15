@@ -160,6 +160,7 @@ function change_caracter(change) {
 
 let cont_quit_num = 18;
 function quit() {
+    bar.style.display = 'none';
     sidebar.style.display = 'none';
     video_quit.style.display = 'block';
     cont_quit.style.visibility = 'unset';
