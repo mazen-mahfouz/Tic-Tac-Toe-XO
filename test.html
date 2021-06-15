@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>xo</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="flex">
+
+  <audio src="song/sound-1.mp3" id="sound-p" loop></audio>
+  <video src="song/وائل غنيم ده انا كنت مديك قلبي يلا😥.mp4" id="video-quit" class="flex" loop></video>
+  <h2 id="cont-quit"></h2>
+
+  <div id="first-header" class="flex">
+    <button id="first-header-start" onclick="first_header_start()">START</button>
+  </div>
+
+  <div id="overlay"></div>
+
+  <!-- start about1 -->
+  <div id='header' class="flex">
+    <div id="about1">
+      <div id="about1-nav">
+        <div onclick="side_bar()" class="div-padding"><button id="bar"></button></div>
+        <div id="title"></div>
+        <button id="reload" onclick="reload_change()"></button>
+      </div>
+      <ul>
+        <li onclick="xo(this)"><button class="button"></button></li>
+        <li onclick="xo(this)"><button class="button"></button></li>
+        <li onclick="xo(this)"><button class="button"></button></li>
+        <li onclick="xo(this)"><button class="button"></button></li>
+        <li onclick="xo(this)"><button class="button"></button></li>
+        <li onclick="xo(this)"><button class="button"></button></li>
+        <li onclick="xo(this)"><button class="button"></button></li>
+        <li onclick="xo(this)"><button class="button"></button></li>
+        <li onclick="xo(this)"><button class="button"></button></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- end about1 -->
+
+  <!-- start sidebar -->
+
+  <div id="sidebar" class="flex">
+
+    <ul>
+      <li onclick="start()">Start</li>
+      <li>
+        <button id="computer" onclick="change_caracter('computer')">Computer</button>
+        <button id="player1" onclick="change_caracter('player1')">Player2</button>
+      </li>
+      <li onclick="quit()">Quit</li>
+
+      <li class="grid">
+        <div class="div-padding" onclick="fullscreen_change()"><button id="fullscreen" class="flex"></button></div>
+        <div class="div-padding" onclick="fun_sound()"><button id="sound" class="flex"><span></span></button></div>
+      </li>
+
+    </ul>
+
+  </div>
+
+  <!-- end sidebar -->
+
+  <script src="test.js"></script>
+</body>
+
+</html>
